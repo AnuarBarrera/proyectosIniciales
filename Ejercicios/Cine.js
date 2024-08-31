@@ -1,0 +1,2 @@
+let cine = [["sala1","movie1",100,"lunes"],["sala2","movie2",100,"martes"],["sala3","movie3",100,"miercoles"],["sala4","movie4",50,"jueves"],["sala5","movie5",50,"viernes"],["sala6","movie6",50,"sabado"],["sala7","movie7",50,"domingo"]];
+console.log(cine);

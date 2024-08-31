@@ -1,0 +1,1 @@
+gsap.to(".img", {rotation: 27, x: 100, duration: 1});

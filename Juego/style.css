@@ -1,0 +1,18 @@
+header {
+  background: black;
+  height: 100px;
+}
+
+footer {
+  background: black;
+  height: 100px;
+}
+
+main {
+  height: 400px;
+  background: #555555;
+}
+
+img {
+  height: 100px;
+}

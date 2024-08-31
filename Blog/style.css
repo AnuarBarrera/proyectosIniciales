@@ -1,0 +1,34 @@
+body {
+  background: black;
+}
+
+.texto1 {
+  font-size: 10px;
+  font-family: Times New Roman;
+  color: white;
+}
+
+.enlace-portafolio{
+  background: #f11;
+}
+
+.foto-cafe{
+  background: #f1f;
+}
+
+.resultado-deportivos{
+  background: #bcb;
+}
+
+.contenedor-grid{
+  display: grid;
+  grid-template-columns:150px 150px ;
+  grid-template-rows: 100px;
+  
+}
+
+.resultados{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 75px;
+}
