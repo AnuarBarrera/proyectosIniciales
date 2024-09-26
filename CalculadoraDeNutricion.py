@@ -13,13 +13,14 @@ class Usuario():
   #Exit Information
   def showResult(self):
     pass
-
+  
 #Class TransformData is one implementation between the entrence information and el process data in CalculadoraDeNutricion
 class TransformData():
-  def __init__(self,data,number):
-    self.data = data
-    self.number = number
-    
+  
+  def transformateList(self,data):
+    dataList = [int(x) for x in data.split(",")]
+    return dataList
+  
   def transform(self,data,number):
     
     value = 0
@@ -41,14 +42,14 @@ class CalculadoraDeNutricion():
   def calculate(self,sample,portion,incognit):
     return (portion * incognit) / sample
 
-start = Usuario()
-start.messageWelcome()
-data = start.inputInformation()
+startApp = Usuario()
+startApp.messageWelcome()
+dataUsurio = startApp.inputInformation()
+transfomData = TransformData()
+informationList = transfomData.transformateList(dataUsurio)
+sample = transfomData.transform(informationList,0)
+portion = transfomData.transform(informationList,1)
+sugar = transfomData.transform(informationList,2)
+protein = transfomData.transform(informationList,3)
+fat = transfomData.transform(informationList,4)
 
-sample = TransformData(data,0)
-portion = TransformData(data,1)
-sugar= TransformData(data,2)
-protein = TransformData(data,3)
-fat = TransformData(data,4)
-
-    
