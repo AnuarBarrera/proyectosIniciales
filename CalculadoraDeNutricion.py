@@ -1,6 +1,8 @@
 #readmy CalculadoraDeNutricion is un algoritm what calculate the content protein, sugar and fats have the product.
 
 #Class Usuario show interface the usuario
+import os
+
 class Usuario():
   
   def messageWelcome(self):
@@ -18,8 +20,13 @@ class Usuario():
 class TransformData():
   
   def transformateList(self,data):
-    dataList = [float(x) for x in data.split(",")]
-    return dataList
+    try:
+      dataList = [float(x) for x in data.split(",")]
+      return dataList
+    except ValueError:
+      print("Some elements not is Number, Exit app")
+      os._exit(0) #exit app
+   
   
   def transform(self,data,number):
     
@@ -38,19 +45,6 @@ class CalculadoraDeNutricion():
   def calculate(self,sample,portion,incognit):
     return (portion * incognit) / sample
 
-#Manager execptions
-
-class Execptions():
-  
-  def wordsNoAcepted(self):
-    pass
-  
-  def valuesMinimus(self):
-    pass
-  
-  def pointForComma(self):
-    pass
-  
 #call the start app
 startApp = Usuario()
 startApp.messageWelcome()
@@ -59,8 +53,6 @@ dataUsurio = startApp.inputInformation()
 #call transformate data
 transfomData = TransformData()
 informationList = transfomData.transformateList(dataUsurio)
-
-#call exeprions
 
 #charge the variables
 sample = transfomData.transform(informationList,0)
