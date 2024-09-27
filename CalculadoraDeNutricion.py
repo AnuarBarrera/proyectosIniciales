@@ -20,7 +20,12 @@ class Usuario():
 class TransformData():
   
   def transformateList(self,data):
+    
+    #Charge exception
     try:
+      """ 
+      exeption what asses the elements into the list, if some elements not is interger or floar, show the message and kill the app
+      """
       dataList = [float(x) for x in data.split(",")]
       return dataList
     except ValueError:
@@ -30,13 +35,22 @@ class TransformData():
   
   def transform(self,data,number):
     
-    value = 0
+    #charge exeption
+    """
+    exeption what asses the count elemnts into list, if is minor 5 elements, show message and kill app
+    """
+    try:
+      
+      value = 0
+      
+      for i in range(0,5):
+        if i == number:
+          value = data[i]
+      return value
     
-    for i in range(0,5):
-      if i == number:
-        value = data[i]
-        
-    return value
+    except IndexError:
+      print("You was entered minor count elements request, or, you was used point in place to comma. Exit app")
+      os._exit(0) #exit app
     
 #class CalculadoraDeNutricion is the backend from application
 class CalculadoraDeNutricion():
