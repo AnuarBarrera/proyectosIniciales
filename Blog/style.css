@@ -1,3 +1,7 @@
+body{
+  background: black;
+}
+
 .welcome{
   text-align: center;
   background: linear-gradient(to right, #0000ff,#00ffff);
@@ -6,54 +10,32 @@
   -webkit-text-fill-color: transparent;
 }
 
-.titleColors{
-  background: white;
-  display: inline;
-  vertical-align: middle;
-  margin-bottom: 10px; 
-  padding: 10px; 
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  font-family: calibri;
-}
-
-body {
-  background: black;
-}
-
-.texto1 {
-  font-size: 10px;
-  font-family: Times New Roman;
+.texto{
+  font-size: 18px;
+  font-family: Gotham;
   color: white;
 }
 
-.enlace-portafolio{
+.contenedor_derecha{
+  width: 100%;
+}
+
+.portafolio{
   background: #f11;
-}
-
-.foto-cafe{
-  background: #f1f;
-  margin-right: 15px;
-}
-
-.resultado-deportivos{
-  background: #bcb;
-}
-
-.contenedor-grid{
-  display: grid;
-  grid-template-columns:50% 50%;
-  width:90%;
-  gap:20px;
-  justify-items:space-between;
-  padding:0 20px;
+  margin-bottom: 5px;
   
 }
 
+.fotos{
+  background: #f1f;
+  margin-top: 5px;
+}
+
 .resultados{
-  display: grid;
-  grid-template-columns: 100%;
+  background: grey;
+  color: white;
+  width: 100%;
+  margin-top: 5px;
 }
 
 
@@ -62,7 +44,7 @@ body {
 ```
 /* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 768px) {
-    /* Estilos aquí */
+  
 }
 
 /* Estilos para pantallas medianas */
