@@ -8,27 +8,26 @@ body{
   background-clip: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  font-family: Tahoma;
 }
 
 .texto{
   font-size: 18px;
-  font-family: Gotham;
+  font-family: Gotham, Sans-Serif;
   color: white;
 }
 
-.contenedor_derecha{
-  width: 100%;
-}
-
 .portafolio{
-  background: #f11;
+  background-color: rgba(64,64,64,0.5);
   margin-bottom: 5px;
-  
+  color: white;
 }
 
 .fotos{
-  background: #f1f;
+  background-color: rgba(64,64,64,0.5);
   margin-top: 5px;
+  color: white;
 }
 
 .resultados{
