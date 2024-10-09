@@ -23,12 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let githubButton = document.createElement('a');
   githubButton.innerText = "GitHub";
-  githubButton.href = "https://github.com/tuusuario";  // Reemplaza por tu enlace de GitHub
+  githubButton.href = "https://github.com/AnuarBarrera";  // Reemplaza por tu enlace de GitHub
   githubButton.target = "_blank";
 
   let linkedinButton = document.createElement('a');
   linkedinButton.innerText = "LinkedIn";
-  linkedinButton.href = "https://www.linkedin.com/in/tuusuario";  // Reemplaza por tu enlace de LinkedIn
+  linkedinButton.href = "https://www.linkedin.com/in/AnuarBarrera";  // Reemplaza por tu enlace de LinkedIn
   linkedinButton.target = "_blank";
 
   // Añadir botones al contenedor
