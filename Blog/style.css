@@ -8,7 +8,7 @@ body{
   background-clip: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 40px;
+  font-size: 18px;
   font-family: Tahoma;
   margin-bottom: 5px;
   width: 100%;
@@ -17,7 +17,7 @@ body{
 }
 
 .texto-entrada{
-  font-size: 18px;
+  font-size: 10px;
   font-family: Gotham, Sans-Serif;
   color: white;
   background-color: rgba(64,64,64,0.2);

@@ -63,7 +63,7 @@ function crearCarruselFotos() {
 
 function crearHistorialLaboral() {
   const historialLaboralElement = document.createElement("div");
-  (link unavailable) = "historial-laboral";
+  //(link unavailable) = "historial-laboral";
   historialLaboral.forEach((experiencia) => {
     const experienciaElement = document.createElement("p");
     experienciaElement.textContent = `${experiencia.empresa} - ${experiencia.cargo} (${experiencia.fecha})`;
@@ -74,7 +74,7 @@ function crearHistorialLaboral() {
 
 function crearProyectos() {
   const proyectosElement = document.createElement("div");
-  (link unavailable) = "proyectos";
+  //(link unavailable) = "proyectos";
   proyectos.forEach((proyecto) => {
     const proyectoElement = document.createElement("p");
     proyectoElement.textContent = `${proyecto.nombre} - ${proyecto.descripcion} (${proyecto.tecnologias.join(", ")})`;
@@ -85,7 +85,7 @@ function crearProyectos() {
 
 function crearRedesSociales() {
   const redesSocialesElement = document.createElement("div");
-  (link unavailable) = "redes-sociales";
+  //(link unavailable) = "redes-sociales";
   redesSociales.forEach((red) => {
     const redElement = document.createElement("p");
     redElement.textContent = `${red.nombre} - ${red.url}`;
@@ -95,10 +95,12 @@ function crearRedesSociales() {
 }
 
 // Inicialización
-crearTitulo();
-crearParrafoIntroductorio();
-crearBotonesAcceso();
-crearCarruselFotos();
-crearHistorialLaboral();
-crearProyectos();
-crearRedesSociales();
+document.addEventListener("DOMContentLoaded", function() {
+  crearTitulo();
+  crearParrafoIntroductorio();
+  crearBotonesAcceso();
+  crearCarruselFotos();
+  crearHistorialLaboral();
+  crearProyectos();
+  crearRedesSociales();
+});
